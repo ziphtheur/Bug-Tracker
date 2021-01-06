@@ -1,9 +1,14 @@
 import React from 'react';
+import Header from './Header/Header'
+import Sidebar from './Sidebar/Sidebar'
 
 const App = () => {
 
     return (
-        <h1>App</h1>
+        <div>
+            <Header/>
+            <Sidebar/>
+        </div>
     )
 }
 
