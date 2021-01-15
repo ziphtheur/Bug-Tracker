@@ -4,6 +4,8 @@ const tickets = require('./router/tickets');
 const users = require('./router/users');
 const mongoose = require('mongoose');
 
+require('dotenv').config();
+
 const port = process.env.PORT || 5000;
 const app = express();
 
@@ -11,7 +13,7 @@ const server = http.createServer(app);
 
 app.use(express.json());
 
-const URI = "mongodb+srv://zippy:Maxhonor.1@cluster0.verkd.mongodb.net/tickets?retryWrites=true&w=majority";
+const URI = process.env.ATLAS_URI;
 
 mongoose.connect(URI, { useFindAndModify: false, useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
 
