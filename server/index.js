@@ -1,7 +1,7 @@
 const express = require("express");
 const http = require('http');
-const tickets = require('./router/tickets');
-const users = require('./router/users');
+const ticketsRouter = require('./router/tickets');
+const usersRouter = require('./router/users');
 const mongoose = require('mongoose');
 
 require('dotenv').config();
