@@ -1,0 +1,48 @@
+.login-page{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: turquoise;
+}
+.login-container{
+    position: absolute;
+    padding: 15px;
+    left: 30vw;
+    top: 20vh;
+    display: grid;
+    grid-template-columns: 15vw 15vw;
+    grid-template-rows: 15vh 15vh;
+    width: 30vw;
+    height: 35vh;
+    background-color: gray;
+    
+}
+.login-container button{
+    display: grid;
+    width: 15vw;
+    height: 15vh;
+    font-size: 30px;
+    text-align: center;
+    text-justify: center;
+}
+.admin-button {
+    background-color: red;
+}
+.developer-button{
+    background-color: blue;
+}
+.project-manager-button{
+    background-color: rgb(217, 255, 0);
+}
+.team-member-button{
+    background-color:green;
+}
+.login-submit{
+    background-color: lightgray;
+    width: 10vw;
+    height: 5vh;
+    position: absolute;
+    left: 40vw;
+    top: 52vh;
+}

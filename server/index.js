@@ -23,6 +23,6 @@ connection.once('open', () => {
     console.log('Database connection established')
 })
 
-//app.use(router)
+app.use(ticketsRouter)
 
 server.listen(port, () => console.log(`server has started on port ${port}`))
